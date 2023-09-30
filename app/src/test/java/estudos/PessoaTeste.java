@@ -10,12 +10,12 @@ public class PessoaTeste {
     @Test
     void deveCalcularIdadeCorretamente() {
         Pessoa jessica = new Pessoa("Jéssica", LocalDateTime.of(2000, 1, 1, 15, 0, 0));
-        Assertions.assertEquals(22, jessica.getIdade());
+        Assertions.assertEquals(23, jessica.getIdade());
     }
 
     @Test
     void deveRetornarSeEhMaiorDeIdade() {
-        Pessoa jessica = new Pessoa("Jéssica", LocalDateTime.of(2000, 1, 1, 15, 0, 0));
+        Pessoa jessica = new Pessoa("Jéssica", LocalDateTime.of(2005, 1, 1, 15, 0, 0));
         Assertions.assertTrue(jessica.ehMaiorDeIdade());
 
         Pessoa joao = new Pessoa("João", LocalDateTime.now());
